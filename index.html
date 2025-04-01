@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificaçao</title>
+</head>
+<body>
+    <style>
+        body {
+            font: normal 18px arial;
+            background-color: rgb(127, 168, 255);
+        }
+
+        div#resultado {
+            color: blueviolet;
+        }
+
+    </style>
+
+    <h1>Estrangeiro ou Nativo?</h1>
+    <strong>Digite seu pais aqui : </strong> <input type="text" name="txtn1" id="txtn1">
+    <input type="button" value="Verificação" onclick="verificar()">
+    <div id="resultado">
+       <h2> Voce é .... </h2>
+    </div>
+
+    <script>
+      
+    
+        function verificar () {
+        var txt1 = document.querySelector('input#txtn1')
+        var resultado = document.querySelector('div#resultado')
+        var pais = (txtn1.value)
+
+       if (pais == 'brasil') {
+        resultado.innerHTML = '<h3>Voce é Brasileiro!</h3>'
+       } else {
+        resultado.innerHTML = '<h3>Voce é estrangeiro!</h3>'
+       }
+        }
+    </script>
+
+</body>
+</html>
